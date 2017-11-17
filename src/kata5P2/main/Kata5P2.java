@@ -1,6 +1,7 @@
 package kata5P2.main;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;
 import kata5P2.model.Histogram;
@@ -27,9 +28,9 @@ public class Kata5P2 {
     List<String> mailList;
     Histogram<String> histogram;
     
-    private void input() throws IOException {
+    private void input() throws IOException, ClassNotFoundException, SQLException {
         String filename = ("C:\\Users\\khushbu\\Documents\\NetBeansProjects\\kata4\\emails.txt");
-        mailList = MailListReader.read(filename);
+        mailList = MailListReader.read();
     }
 
     private void process() throws Exception {
