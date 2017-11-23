@@ -29,7 +29,7 @@ public class Kata5P2 {
     Histogram<String> histogram;
     
     private void input() throws IOException, ClassNotFoundException, SQLException {
-        String filename = ("C:\\Users\\khushbu\\Documents\\NetBeansProjects\\kata4\\emails.txt");
+        String filename = ("C:/Users/Ana/Downloads/KATA5/KATA5/emails.txt");
         mailList = MailListReader.read();
     }
 
